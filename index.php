@@ -7,7 +7,7 @@ Il database e la tabella non devono essere realmente creati. -->
     include __DIR__ . '/classes/user.php';
     include __DIR__ . '/classes/person.php';
     
-    $users = [
+    $persons = [
         new Person("Tom", "Hiddleston", 40),
         new Person("Chris", "Evans", 39),
         new Person("Angela", "Gallo", 25),
@@ -15,11 +15,21 @@ Il database e la tabella non devono essere realmente creati. -->
         new Person ("Mariapia", "Gianguzzi", 31),
         new Person ("Antonio","Quattrocchi", 35)
     ];
+    $users = [
+        new User("Tom", "Hiddleston", 40, "username", "email"),
+        new User("Chris", "Evans", 39, "username", "email"),
+        new User("Angela", "Gallo", 25, "username", "email"),
+        new User("Raffaele", "Baldassarre", 32, "username", "email"),
+        new User("Mariapia", "Gianguzzi", 31, "username", "email"),
+        new User("Antonio","Quattrocchi", 35, "username", "email"),
+        new User("Alessandro", "Internicola", 33, "username", "email")
+    ];
+    
 
-    foreach ($users as $user) {
-        var_dump($user->name, $user->lastName, $user->age);
-    }
-
+   /*  foreach ($users as $user) {
+        var_dump($user->name, $user->lastName, $user->age, $user->username);
+    } 
+ */
 ?>
 
 
@@ -29,15 +39,17 @@ Il database e la tabella non devono essere realmente creati. -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User</title>
+    <title>document</title>
 </head>
 <body>
-<div class=" container d-flex">
-        <?php foreach($users as $user){?>
+    <div class=" container d-flex">
+        <?php foreach($users as $value){?>
             <div class="card col-3">
-                <p class="author"><?php echo $value->getName(); ?></p>
-                <p class="genre"><?php echo $value->getLastName();?></p>
-                <p class="year"><?php echo $value->getAge();?></p>
+                <p class="author"><?php echo $value->name?></p>
+                <p class="genre"><?php echo $value->lastName?></p>
+                <p class="year"><?php echo $value->age?></p>
+                <p class="year"><?php echo $value->username?></p>
+                <p class="year"><?php echo $value->email?></p>
             </div>
         <?php } ?>        
     </div>
