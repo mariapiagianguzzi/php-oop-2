@@ -32,6 +32,15 @@ Il database e la tabella non devono essere realmente creati. -->
     <title>User</title>
 </head>
 <body>
+<div class=" container d-flex">
+        <?php foreach($users as $user){?>
+            <div class="card col-3">
+                <p class="author"><?php echo $value->getName(); ?></p>
+                <p class="genre"><?php echo $value->getLastName();?></p>
+                <p class="year"><?php echo $value->getAge();?></p>
+            </div>
+        <?php } ?>        
+    </div>
 
 
     

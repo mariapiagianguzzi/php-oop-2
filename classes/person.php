@@ -21,6 +21,7 @@
     $alessandro->username = "aleinter";
     $alessandro->email = "alessandro@gmail.com";
     $alessandro->password = "password";
+    var_dump($alessandro);
     
 ?>
     
