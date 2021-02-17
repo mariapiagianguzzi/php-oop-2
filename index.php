@@ -16,13 +16,13 @@ Il database e la tabella non devono essere realmente creati. -->
         new Person ("Antonio","Quattrocchi", 35)
     ];
     $users = [
-        new User("Tom", "Hiddleston", 40, "username", "email"),
-        new User("Chris", "Evans", 39, "username", "email"),
-        new User("Angela", "Gallo", 25, "username", "email"),
-        new User("Raffaele", "Baldassarre", 32, "username", "email"),
-        new User("Mariapia", "Gianguzzi", 31, "username", "email"),
-        new User("Antonio","Quattrocchi", 35, "username", "email"),
-        new User("Alessandro", "Internicola", 33, "username", "email")
+        new User("Tom", "Hiddleston", 40, "tomhiddles", "tomhiddles@gmail.com"),
+        new User("Chris", "Evans", 39, "Chris1820", "evans@gmail.com"),
+        new User("Angela", "Gallo", 25, "angelayu", "angela@gmail.com"),
+        new User("Raffaele", "Baldassarre", 32, "ginomitico", "raffa@gmail.com"),
+        new User("Mariapia", "Gianguzzi", 31, "pia_oizys", "pia@gmail.com"),
+        new User("Antonio","Quattrocchi", 35, "antoq", "antonio@gmail.com"),
+        new User("Alessandro", "Internicola", 33, "interniculo", "aleint@gmail.com")
     ];
     
 
